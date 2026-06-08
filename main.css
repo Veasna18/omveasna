@@ -1,11 +1,5 @@
-/* ============================================================
-   OM VEASNA — Portfolio CSS
-   Full stylesheet: dark theme, animations, responsive
-   ============================================================ */
-
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
-/* ── Variables ── */
 :root {
   --bg:          #0a0a0f;
   --bg2:         #0f0f1a;
@@ -28,7 +22,6 @@
   --trans:       0.3s ease;
 }
 
-/* ── Light Mode ── */
 :root.light {
   --bg:      #f4f4f8;
   --bg2:     #ebebf3;
@@ -40,7 +33,6 @@
   --shadow:  0 8px 32px rgba(0,0,0,0.10);
 }
 
-/* ── Color Themes ── */
 :root.theme-blue {
   --accent:      #3b82f6;
   --accent2:     #06b6d4;
