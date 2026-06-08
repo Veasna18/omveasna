@@ -1,9 +1,4 @@
-/* ============================================================
-   OM VEASNA — Portfolio JS
-   Cursor, Color Panel, Nav Active, Reveal, Skill Bars, Ripple
-   ============================================================ */
 
-/* ── Custom Cursor ── */
 const cursor     = document.getElementById('cursor');
 const cursorRing = document.getElementById('cursorRing');
 
@@ -27,7 +22,6 @@ document.querySelectorAll('a, button').forEach(el => {
   });
 });
 
-/* ── Color Panel (floating bottom-right) ── */
 const themes = ['purple', 'blue', 'green', 'pink', 'orange'];
 
 const panel = document.createElement('div');
@@ -100,7 +94,6 @@ if (toggleBtn) {
   });
 }
 
-/* ── Nav Active + Ripple ── */
 const navLinks = document.querySelectorAll('.nav-links a');
 
 navLinks.forEach(link => {
@@ -120,7 +113,6 @@ navLinks.forEach(link => {
   });
 });
 
-/* ── Scroll Spy ── */
 const sections = document.querySelectorAll('section[id]');
 const spyObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -133,7 +125,6 @@ const spyObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.4 });
 sections.forEach(s => spyObserver.observe(s));
 
-/* ── Reveal on Scroll ── */
 const revealObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -147,7 +138,6 @@ const revealObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-/* ── Skill Bar Animation ── */
 const skillObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -162,7 +152,6 @@ const skillObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.3 });
 document.querySelectorAll('.skill-card').forEach(card => skillObserver.observe(card));
 
-/* ── Nav shadow on scroll ── */
 const nav = document.querySelector('nav');
 window.addEventListener('scroll', () => {
   nav.style.boxShadow = window.scrollY > 20 ? '0 4px 24px rgba(0,0,0,0.3)' : 'none';
