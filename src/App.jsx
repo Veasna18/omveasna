@@ -101,7 +101,7 @@ const PROJECTS = [
     title: "Do You Love Me?",
     stack: "HTML · CSS · Fun",
     desc: "A playful interactive page with cute animations and a teasing yes/no question.",
-    href: "https://veasna18.github.io/mylove/",
+    href: "https://github.com/Veasna18/mylovehttps://veasna18.github.io/mylove/",
     cta: "Visit site",
   },
   {
@@ -115,22 +115,64 @@ const PROJECTS = [
     title: "ParkingLot System",
     stack: "C++ · School Project",
     desc: "A console app managing a parking lot, built to practice OOP for university coursework.",
-    href: "https://github.com/Veasna18/ParkingLot",
+    href: "https://github.com/Veasna18/C-School-Project",
     cta: "View code",
   },
   {
     title: "Nike E-commerce Clone",
     stack: "React JS · Tailwind CSS",
     desc: "A responsive e-commerce web application replicating Nike's online store, featuring product filtering, cart management, and modern UI design.",
-    href: "https://github.com/Veasna18/nike-clone",
+    href: "https://veasna18.github.io/E-commeseAssignment/",
     cta: "View code",
-  }
+  },
+  {
+    title: "Khmer Tourist",
+    stack: "HTML · CSS · JavaScript",
+    desc: "Tourism guide platform showcasing destinations, attractions, and cultural travel information in Cambodia.",
+    href: "https://veasna18.github.io/KhmerTourist/",
+    cta: "View code",
+  },
+  {
+    title: "Anajak Computer",
+    stack: "HTML · CSS · JavaScript",
+    desc: "Technology and computer store website featuring products, details, and responsive navigation.",
+    href: "https://veasna18.github.io/AnajakComputer/",
+    cta: "View code",
+  },
+  {
+    title: "GenZ Restaurant",
+    stack: "HTML · CSS · JavaScript",
+    desc: "Modern restaurant web application featuring menu items and a responsive layout.",
+    href: "https://veasna18.github.io/genz-resterent/",
+    cta: "View code",
+  },
+  {
+    title: "Mama Computing",
+    stack: "HTML · CSS · JavaScript",
+    desc: "Computing and technology-focused educational or service platform.",
+    href: "https://veasna18.github.io/mama-computing/",
+    cta: "View code",
+  },
+  {
+    title: "Sofa Shop",
+    stack: "HTML · CSS · JavaScript",
+    desc: "E-commerce storefront interface for browsing and shopping furniture products.",
+    href: "https://veasna18.github.io/sofa-shop/",
+    cta: "View code",
+  },
+  {
+    title: "ReanCode",
+    stack: "HTML · CSS · JavaScript",
+    desc: "Coding learning platform and resource hub for developers.",
+    href: "https://veasna18.github.io/ReanCode/",
+    cta: "View code",
+  },
 ];
 
 const SOCIALS = [
   { icon: Github, label: "Veasna18", href: "https://github.com/Veasna18" },
   { icon: Linkedin, label: "Om Veasna", href: "https://www.linkedin.com/in/om-veasna-32b223390/" },
-  { icon: Send, label: "@VeasNa178", href: "https://t.me/VeasNa178" },
+  { icon: Send, label: "@Mr V - Cummunity", href: "https://t.me/https://t.me/MRVCummunity" },
   { icon: Facebook, label: "Om Veasna", href: "https://www.facebook.com/profile.php?id=61581495545562" },
 ];
 
