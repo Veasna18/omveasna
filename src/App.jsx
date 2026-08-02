@@ -118,6 +118,13 @@ const PROJECTS = [
     href: "https://github.com/Veasna18/ParkingLot",
     cta: "View code",
   },
+  {
+    title: "Nike E-commerce Clone",
+    stack: "React JS · Tailwind CSS",
+    desc: "A responsive e-commerce web application replicating Nike's online store, featuring product filtering, cart management, and modern UI design.",
+    href: "https://github.com/Veasna18/nike-clone",
+    cta: "View code",
+  }
 ];
 
 const SOCIALS = [
