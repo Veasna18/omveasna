@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {  Github, Linkedin, Send, Facebook, Mail, Phone,  ArrowUpRight, Menu, X,  MapPin, } from "lucide-react";
+import {  Github, Linkedin, Send, Facebook, Mail, Phone,  ArrowUpRight, Menu, X,  MapPin, Sun, Moon } from "lucide-react";
 import logo from './Images/icon.jpg'
 
 const NAV = [
@@ -59,9 +59,9 @@ const EDUCATION = [
 
 const WORK = [
   {
-    period: "2026 — Persent",
-    role: "Tracking officer",
-    desc: "Tracking Vehicel at Vireak Buntham Express",
+    period: "2026 — Present",
+    role: "Tracking Officer",
+    desc: "Tracking Vehicle at Vireak Buntham Logistic",
   },
   {
     period: "2024 — 2026",
@@ -93,86 +93,119 @@ const PROJECTS = [
   {
     title: "Creator Profile — About Me",
     stack: "HTML · CSS",
+    startedCourse: "(Course Project - 2024)",
+    course: "My Portfolio 2026",
+    starturse: "My Portfolio 2026",
     desc: "A clean, link-in-bio style profile page for a Gaming & Tech content creator.",
     href: "https://veasna18.github.io/FollowMe/",
     cta: "Visit site",
   },
   {
-    title: "Do You Love Me?",
-    stack: "HTML · CSS · Fun",
-    desc: "A playful interactive page with cute animations and a teasing yes/no question.",
-    href: "https://github.com/Veasna18/mylovehttps://veasna18.github.io/mylove/",
+    title: "Telegram Bot - MsgHub",
+    stack: "JavaScript · Telegram Bot API",
+    startedCourse: "(Real Project - 2026)",
+    course: "MsgHub - 2026",
+    starturse: "MsgHub - 2026",
+    desc: "Auto message bot for Telegram.",
+    href: "https://t.me/messageaSend_bot",
     cta: "Visit site",
   },
   {
-    title: "YouTube Downloader",
-    stack: "Web App",
-    desc: "A practical web app exploring download workflows and client-side app structure.",
-    href: "https://github.com/Veasna18/YouTube-Downloader",
-    cta: "View code",
+    title: "Do You Love Me?",
+    stack: "HTML · CSS · Fun",
+    startedCourse: "(Course Project - 2025)",
+    course: "Practice Coding 2025",
+    starturse: "Practice Coding 2025",
+    desc: "A playful interactive page with cute animations and a teasing yes/no question.",
+    href: "https://veasna18.github.io/mylove/",
+    cta: "Visit site",
   },
   {
-    title: "ParkingLot System",
+    title: "C-School-Project",
     stack: "C++ · School Project",
+    startedCourse: "(School Project - 1st Year 1st Semester)",
+    course: "Practice Coding 2026",
+    starturse: "Practice Coding 2026",
     desc: "A console app managing a parking lot, built to practice OOP for university coursework.",
     href: "https://github.com/Veasna18/C-School-Project",
     cta: "View code",
   },
   {
-    title: "Nike E-commerce Clone",
+    title: "Nike E-commerce",
     stack: "React JS · Tailwind CSS",
+    startedCourse: "(School Project - 2nd Year 1st Semester)",
+    course: "React.js Class 2026 Group Assignment",
+    starturse: "React.js Class 2026 Group Assignment",
     desc: "A responsive e-commerce web application replicating Nike's online store, featuring product filtering, cart management, and modern UI design.",
     href: "https://veasna18.github.io/E-commeseAssignment/",
-    cta: "View code",
+    cta: "Visit site",
   },
   {
     title: "Khmer Tourist",
     stack: "HTML · CSS · JavaScript",
+    startedCourse: "(School Project - 2nd Year 2nd Semester)",
+    course: "Web Programming Class 2026 School competition program (Semifinal)",
+    starturse: "Web Programming Class 2026 School competition program (Semifinal)",
     desc: "Tourism guide platform showcasing destinations, attractions, and cultural travel information in Cambodia.",
     href: "https://veasna18.github.io/KhmerTourist/",
-    cta: "View code",
+    cta: "Visit site",
   },
   {
     title: "Anajak Computer",
     stack: "HTML · CSS · JavaScript",
+    startedCourse: "(School Project - 2nd Year 1st Semester)",
+    course: "Web Programming Class 2025",
+    starturse: "Web Programming Class 2025",
     desc: "Technology and computer store website featuring products, details, and responsive navigation.",
     href: "https://veasna18.github.io/AnajakComputer/",
-    cta: "View code",
+    cta: "Visit site",
   },
   {
     title: "GenZ Restaurant",
     stack: "HTML · CSS · JavaScript",
+    startedCourse: "(School Project - 2nd Year 1st Semester)",
+    course: "Web Programming Class 2025",
+    starturse: "Web Programming Class 2025",
     desc: "Modern restaurant web application featuring menu items and a responsive layout.",
     href: "https://veasna18.github.io/genz-resterent/",
-    cta: "View code",
+    cta: "Visit site",
   },
   {
     title: "Mama Computing",
     stack: "HTML · CSS · JavaScript",
+    startedCourse: "(School Project - 2nd Year 1st Semester)",
+    course: "Web Programming Class 2025",
+    starturse: "Web Programming Class 2025",
     desc: "Computing and technology-focused educational or service platform.",
     href: "https://veasna18.github.io/mama-computing/",
-    cta: "View code",
+    cta: "Visit site",
   },
   {
     title: "Sofa Shop",
     stack: "HTML · CSS · JavaScript",
+    startedCourse: "(School Project - 2nd Year 1st Semester)",
+    course: "Web Programming Class 2025",
+    starturse: "Web Programming Class 2025",
     desc: "E-commerce storefront interface for browsing and shopping furniture products.",
     href: "https://veasna18.github.io/sofa-shop/",
-    cta: "View code",
+    cta: "Visit site",
   },
   {
     title: "ReanCode",
     stack: "HTML · CSS · JavaScript",
+    startedCourse: "(My Website - 2024)",
+    course: "My Personal Website 2024 (only frontend)",
+    starturse: "My Personal Website 2024 (only frontend)",
     desc: "Coding learning platform and resource hub for developers.",
     href: "https://veasna18.github.io/ReanCode/",
-    cta: "View code",
+    cta: "Visit site",
   },
 ];
 
 const SOCIALS = [
   { icon: Github, label: "Veasna18", href: "https://github.com/Veasna18" },
   { icon: Linkedin, label: "Om Veasna", href: "https://www.linkedin.com/in/om-veasna-32b223390/" },
-  { icon: Send, label: "@Mr V - Cummunity", href: "https://t.me/https://t.me/MRVCummunity" },
+  { icon: Send, label: "Om Veasna", href: "https://t.me/VeasNa178" },
   { icon: Facebook, label: "Om Veasna", href: "https://www.facebook.com/profile.php?id=61581495545562" },
 ];
 
@@ -216,6 +249,24 @@ function useTypedLines(lines, speed = 26, startDelay = 300) {
 
 export default function Portfolio() {
   const [navOpen, setNavOpen] = useState(false);
+  const [theme, setTheme] = useState(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("ov-theme");
+      if (saved) return saved;
+      return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    }
+    return "dark";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("ov-theme", theme);
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  };
+
   const heroLines = [
     "$ whoami",
     "Om Veasna — Web Developer & SE student",
@@ -231,11 +282,26 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="ov-root">
+    <div className={`ov-root ${theme}`}>
       <style>{`
+      
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
 
         .ov-root {
+          --radius: 10px;
+          background: var(--bg);
+          color: var(--text);
+          font-family: 'Inter', system-ui, sans-serif;
+          min-height: 100vh;
+          width: 100%;
+          line-height: 1.5;
+          transition: background-color .25s ease, color .25s ease;
+        }
+        .ov-root * { box-sizing: border-box; }
+        .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+
+        /* Night Mode (Dark - Default) */
+        .ov-root, .ov-root.dark {
           --bg: #0b0f17;
           --panel: #111826;
           --panel-2: #0e1420;
@@ -244,23 +310,52 @@ export default function Portfolio() {
           --dim: #8a93a6;
           --accent: #e8a33d;
           --accent-2: #4fd1c5;
-          --radius: 10px;
-          background: var(--bg);
-          color: var(--text);
-          font-family: 'Inter', system-ui, sans-serif;
-          min-height: 100vh;
-          width: 100%;
-          line-height: 1.5;
+          --nav-bg: rgba(11, 15, 23, 0.85);
+          --nav-hover: rgba(255, 255, 255, 0.05);
+          --grid-line: rgba(255, 255, 255, 0.035);
+          --term-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.6);
+          --card-shadow: none;
+          --card-hover-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5);
+          --btn-pri-color: #12100a;
+          --tag-bg: rgba(79, 209, 197, 0.08);
+          --tag-border: rgba(79, 209, 197, 0.28);
+          --tag-color: #4fd1c5;
+          --context-color: #e8a33d;
         }
-        .ov-root * { box-sizing: border-box; }
-        .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+
+        /* Day Mode (Light) */
+        .ov-root.light {
+          --bg: #f8fafc;
+          --panel: #ffffff;
+          --panel-2: #f1f5f9;
+          --border: #e2e8f0;
+          --text: #0f172a;
+          --dim: #64748b;
+          --accent: #d97706;
+          --accent-2: #0d9488;
+          --nav-bg: rgba(248, 250, 252, 0.88);
+          --nav-hover: rgba(15, 23, 42, 0.05);
+          --grid-line: rgba(15, 23, 42, 0.05);
+          --term-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.12);
+          --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+          --card-hover-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.12);
+          --btn-pri-color: #ffffff;
+          --tag-bg: rgba(13, 148, 136, 0.09);
+          --tag-border: rgba(13, 148, 136, 0.28);
+          --tag-color: #0d9488;
+          --context-color: #b45309;
+        }
+
+        .ov-nav, .ov-stat, .ov-skill-card, .ov-proj-card, .ov-contact-panel, .ov-social, .ov-term, .ov-btn, .ov-theme-btn, .ov-theme-icon-btn, .ov-mobile-theme-btn {
+          transition: background-color .25s ease, border-color .25s ease, color .25s ease, box-shadow .25s ease, transform .15s ease;
+        }
 
         .ov-bg-grid {
           position: absolute;
           inset: 0;
           background-image:
-            linear-gradient(to right, rgba(255,255,255,0.035) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(255,255,255,0.035) 1px, transparent 1px);
+            linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+            linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
           background-size: 42px 42px;
           mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
           pointer-events: none;
@@ -269,7 +364,7 @@ export default function Portfolio() {
         .ov-nav {
           position: sticky; top: 0; z-index: 40;
           backdrop-filter: blur(10px);
-          background: rgba(11,15,23,0.82);
+          background: var(--nav-bg);
           border-bottom: 1px solid var(--border);
         }
         .ov-nav-inner {
@@ -285,9 +380,69 @@ export default function Portfolio() {
           color: var(--dim); font-size: 13.5px; padding: 8px 12px;
           border-radius: 6px; transition: color .15s ease, background .15s ease;
         }
-        .ov-navlink:hover { color: var(--text); background: rgba(255,255,255,0.04); }
-        .ov-menu-btn { display: none; background: none; border: 1px solid var(--border); border-radius: 8px; padding: 8px; color: var(--text); cursor: pointer; }
-        .ov-mobile-menu { display: none; flex-direction: column; border-top: 1px solid var(--border); padding: 8px 24px 16px; gap: 2px; }
+        .ov-navlink:hover { color: var(--text); background: var(--nav-hover); }
+        .ov-theme-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          background: var(--panel-2);
+          border: 1px solid var(--border);
+          border-radius: 8px;
+          padding: 6px 11px;
+          color: var(--text);
+          cursor: pointer;
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 12px;
+          font-weight: 500;
+          margin-left: 8px;
+        }
+        .ov-theme-btn:hover {
+          border-color: var(--accent);
+          color: var(--accent);
+          transform: translateY(-1px);
+        }
+        .ov-nav-actions {
+          display: none;
+          align-items: center;
+          gap: 8px;
+        }
+        .ov-theme-icon-btn {
+          display: inline-flex;
+          background: var(--panel-2);
+          border: 1px solid var(--border);
+          border-radius: 8px;
+          padding: 8px;
+          color: var(--text);
+          cursor: pointer;
+          align-items: center;
+          justify-content: center;
+        }
+        .ov-theme-icon-btn:hover {
+          border-color: var(--accent);
+          color: var(--accent);
+        }
+        .ov-menu-btn { background: none; border: 1px solid var(--border); border-radius: 8px; padding: 8px; color: var(--text); cursor: pointer; }
+        .ov-mobile-menu { display: none; flex-direction: column; border-top: 1px solid var(--border); padding: 8px 24px 16px; gap: 4px; background: var(--nav-bg); }
+        .ov-mobile-theme-btn {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          background: var(--panel-2);
+          border: 1px solid var(--border);
+          border-radius: 6px;
+          padding: 10px 14px;
+          color: var(--text);
+          font-size: 13px;
+          cursor: pointer;
+          font-family: 'JetBrains Mono', monospace;
+          margin-top: 6px;
+          width: 100%;
+          text-align: left;
+        }
+        .ov-mobile-theme-btn:hover {
+          border-color: var(--accent);
+          color: var(--accent);
+        }
 
         section { scroll-margin-top: 70px; }
         .ov-wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; position: relative; }
@@ -309,18 +464,17 @@ export default function Portfolio() {
           font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500;
           padding: 12px 20px; border-radius: 8px; text-decoration: none;
           display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
-          transition: transform .15s ease, background .15s ease, border-color .15s ease;
           border: 1px solid transparent;
         }
         .ov-btn:hover { transform: translateY(-1px); }
-        .ov-btn.primary { background: var(--accent); color: #12100a; }
-        .ov-btn.primary:hover { background: #f0ae4f; }
+        .ov-btn.primary { background: var(--accent); color: var(--btn-pri-color); }
+        .ov-btn.primary:hover { filter: brightness(1.08); }
         .ov-btn.ghost { border-color: var(--border); color: var(--text); background: transparent; }
         .ov-btn.ghost:hover { border-color: var(--accent-2); color: var(--accent-2); }
 
         .ov-term {
           background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
-          overflow: hidden; box-shadow: 0 24px 60px -20px rgba(0,0,0,0.6);
+          overflow: hidden; box-shadow: var(--term-shadow);
         }
         .ov-term-bar { display: flex; align-items: center; gap: 8px; padding: 12px 14px; border-bottom: 1px solid var(--border); background: var(--panel-2); }
         .ov-term-dot { width: 10px; height: 10px; border-radius: 50%; }
@@ -344,7 +498,7 @@ export default function Portfolio() {
         .ov-bio { color: var(--dim); font-size: 15.5px; margin-bottom: 28px; }
         .ov-bio strong { color: var(--text); }
         .ov-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-        .ov-stat { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 16px 14px; text-align: left; }
+        .ov-stat { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 16px 14px; text-align: left; box-shadow: var(--card-shadow); }
         .ov-stat-val { font-family: 'JetBrains Mono', monospace; font-size: 22px; font-weight: 700; color: var(--accent); }
         .ov-stat-label { font-size: 11.5px; color: var(--dim); margin-top: 4px; }
 
@@ -366,8 +520,8 @@ export default function Portfolio() {
 
         .ov-skills { padding: 90px 0; border-top: 1px solid var(--border); }
         .ov-skill-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-        .ov-skill-card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 18px; transition: border-color .15s ease, transform .15s ease; }
-        .ov-skill-card:hover { border-color: var(--accent-2); transform: translateY(-2px); }
+        .ov-skill-card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 18px; box-shadow: var(--card-shadow); }
+        .ov-skill-card:hover { border-color: var(--accent-2); transform: translateY(-2px); box-shadow: var(--card-hover-shadow); }
         .ov-skill-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
         .ov-skill-name { font-weight: 700; font-size: 14.5px; }
         .ov-skill-status { font-family: 'JetBrains Mono', monospace; font-size: 10px; padding: 2px 7px; border-radius: 999px; }
@@ -377,16 +531,19 @@ export default function Portfolio() {
 
         .ov-portfolio { padding: 90px 0; border-top: 1px solid var(--border); }
         .ov-proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-        .ov-proj-card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 10px; transition: border-color .15s ease, transform .15s ease; }
-        .ov-proj-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+        .ov-proj-card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 10px; box-shadow: var(--card-shadow); }
+        .ov-proj-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: var(--card-hover-shadow); }
+        .ov-proj-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
         .ov-proj-stack { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--dim); }
+        .ov-proj-tag { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--tag-color); background: var(--tag-bg); border: 1px solid var(--tag-border); border-radius: 999px; padding: 2px 8px; white-space: nowrap; }
         .ov-proj-title { font-size: 17px; font-weight: 700; }
+        .ov-proj-context { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--context-color); display: flex; align-items: center; gap: 6px; }
         .ov-proj-desc { color: var(--dim); font-size: 13.5px; flex: 1; }
         .ov-proj-link { font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: var(--accent-2); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; margin-top: 4px; }
         .ov-proj-link:hover { color: var(--accent); }
 
         .ov-contact { padding: 90px 0 60px; border-top: 1px solid var(--border); }
-        .ov-contact-panel { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 42px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; }
+        .ov-contact-panel { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 42px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; box-shadow: var(--card-shadow); }
         .ov-contact-h { font-size: 24px; font-weight: 800; margin: 0 0 12px; }
         .ov-contact-p { color: var(--dim); font-size: 14.5px; margin-bottom: 22px; max-width: 380px; }
         .ov-contact-links { display: flex; flex-direction: column; gap: 10px; }
@@ -394,8 +551,8 @@ export default function Portfolio() {
         .ov-clink svg { color: var(--accent-2); flex-shrink: 0; }
         .ov-clink:hover { color: var(--accent-2); }
         .ov-socials { display: flex; flex-direction: column; gap: 10px; align-self: start; }
-        .ov-social { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text); font-size: 13.5px; transition: border-color .15s ease; }
-        .ov-social:hover { border-color: var(--accent); color: var(--accent); }
+        .ov-social { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text); font-size: 13.5px; }
+        .ov-social:hover { border-color: var(--accent); color: var(--accent); background: var(--nav-hover); }
         .ov-social-left { display: flex; align-items: center; gap: 10px; }
 
         .ov-footer { padding: 26px 24px 40px; text-align: center; color: var(--dim); font-size: 12.5px; font-family: 'JetBrains Mono', monospace; }
@@ -406,7 +563,7 @@ export default function Portfolio() {
           .ov-skill-grid { grid-template-columns: repeat(2, 1fr); }
           .ov-stats { grid-template-columns: repeat(2, 1fr); }
           .ov-navlinks { display: none; }
-          .ov-menu-btn { display: inline-flex; }
+          .ov-nav-actions { display: flex; }
           .ov-mobile-menu.open { display: flex; }
           .ov-h1 { font-size: 34px; }
           .ov-contact-panel { padding: 26px; }
@@ -418,7 +575,7 @@ export default function Portfolio() {
         }
         @media (prefers-reduced-motion: reduce) {
           .ov-cursor { animation: none; }
-          .ov-btn, .ov-skill-card, .ov-proj-card { transition: none; }
+          .ov-btn, .ov-skill-card, .ov-proj-card, .ov-root { transition: none; }
         }
       `}</style>
 
@@ -433,10 +590,29 @@ export default function Portfolio() {
                 {n.label}
               </button>
             ))}
+            <button
+              className="ov-theme-btn"
+              onClick={toggleTheme}
+              aria-label={theme === "dark" ? "Switch to Day mode" : "Switch to Night mode"}
+              title={theme === "dark" ? "Switch to Day mode" : "Switch to Night mode"}
+            >
+              {theme === "dark" ? <Sun size={14} /> : <Moon size={14} />}
+              <span>{theme === "dark" ? "Day" : "Night"}</span>
+            </button>
           </div>
-          <button className="ov-menu-btn" onClick={() => setNavOpen((v) => !v)} aria-label="Toggle menu">
-            {navOpen ? <X size={18} /> : <Menu size={18} />}
-          </button>
+          <div className="ov-nav-actions">
+            <button
+              className="ov-theme-icon-btn"
+              onClick={toggleTheme}
+              aria-label={theme === "dark" ? "Switch to Day mode" : "Switch to Night mode"}
+              title={theme === "dark" ? "Switch to Day mode" : "Switch to Night mode"}
+            >
+              {theme === "dark" ? <Sun size={17} /> : <Moon size={17} />}
+            </button>
+            <button className="ov-menu-btn" onClick={() => setNavOpen((v) => !v)} aria-label="Toggle menu">
+              {navOpen ? <X size={18} /> : <Menu size={18} />}
+            </button>
+          </div>
         </div>
         <div className={`ov-mobile-menu mono ${navOpen ? "open" : ""}`}>
           {NAV.map((n) => (
@@ -444,6 +620,10 @@ export default function Portfolio() {
               {n.label}
             </button>
           ))}
+          <button className="ov-mobile-theme-btn" onClick={toggleTheme}>
+            {theme === "dark" ? <Sun size={15} /> : <Moon size={15} />}
+            <span>{theme === "dark" ? "Switch to Day Mode ☀️" : "Switch to Night Mode 🌙"}</span>
+          </button>
         </div>
       </nav>
 
@@ -591,16 +771,28 @@ export default function Portfolio() {
           <div className="ov-sec-label mono">03 · portfolio</div>
           <h2 className="ov-h2">Selected Work</h2>
           <div className="ov-proj-grid">
-            {PROJECTS.map((p) => (
-              <div className="ov-proj-card" key={p.title}>
-                <span className="ov-proj-stack mono">{p.stack}</span>
-                <span className="ov-proj-title">{p.title}</span>
-                <p className="ov-proj-desc">{p.desc}</p>
-                <a className="ov-proj-link mono" href={p.href} target="_blank" rel="noreferrer">
-                  {p.cta} <ArrowUpRight size={14} />
-                </a>
-              </div>
-            ))}
+            {PROJECTS.map((p) => {
+              const tag = p.startedCourse ? p.startedCourse.replace(/^\(|\)$/g, "") : null;
+              const context = p.course || p.starturse;
+              return (
+                <div className="ov-proj-card" key={p.title}>
+                  <div className="ov-proj-top">
+                    <span className="ov-proj-stack mono">{p.stack}</span>
+                    {tag && <span className="ov-proj-tag mono">{tag}</span>}
+                  </div>
+                  <span className="ov-proj-title">{p.title}</span>
+                  {context && (
+                    <div className="ov-proj-context mono">
+                      <span>›</span> {context}
+                    </div>
+                  )}
+                  <p className="ov-proj-desc">{p.desc}</p>
+                  <a className="ov-proj-link mono" href={p.href} target="_blank" rel="noreferrer">
+                    {p.cta} <ArrowUpRight size={14} />
+                  </a>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
